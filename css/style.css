@@ -1,8 +1,10 @@
 /* Global */
 
+@import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans';
+	font-weight: 20;
 	font-size: 1em;
 	color: #8a8683;
 	background-color:#ffffff;
