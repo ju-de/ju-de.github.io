@@ -2,6 +2,11 @@
 
 @import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
+h1{
+	font-family: 'Open Sans';
+	font-weight: 20;
+	font-size: 1em;
+}
 body {
 	font-family: 'Open Sans';
 	font-weight: 20;
