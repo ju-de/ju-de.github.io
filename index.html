@@ -13,6 +13,17 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
 </head>
 
 <body>
@@ -91,7 +102,13 @@
 		</div>
 	</div>
 
+	<script>
+$(document).ready(function() {
 
+  $("#owl-demo").owlCarousel();
+
+});
+	</script>
 
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
@@ -101,9 +118,14 @@
 			<table>
 				<tr>
 					<td>
-						<img src='images/proj/chorq1.png'></img>
-						<img src='images/proj/chorq2.png'></img>
-						<img src='images/proj/chorq3.png'></img>
+						<div id="owl-demo">
+          
+	<div class="item"><img src='images/proj/chorq1.png' alt="Owl Image"></div>
+	<div class="item"><img src='images/proj/chorq2.png' alt="Owl Image"></div>
+	<div class="item"><img src='images/proj/chorq2.png' alt="Owl Image"></div>
+	<div class="item"><img src='images/proj/chorq3.png' alt="Owl Image"></div>
+
+
 					</td>
 					<td>
 						<h2>Chorq</h2>
@@ -114,6 +136,8 @@
 						<p>Streamlines tab sharing, allowing users to group tabs into stacks, and Kik them to friends.</p>
 					</td>
 				</tr>
+
+
 				<tr>
 					<td>
 						<img src='images/proj/pio1.png'></img>
@@ -125,12 +149,14 @@
 					</td>
 					<td><h2>Pass It On !!</h2>
 						<h5>
-							Languages: JavaScript, Jade, HTML5, Python, CSS3, PHP<br>
-							Tools: Node.js, MongoDB, Express, Monk, Kik API, BeautifulSoup, mySQL, Zepto, Monogo
+							Languages: JavaScript, JQuery, PHP, HTML5, CSS<br>
+							Tools: MySQL, Facebook API, Ziggeo API, Hammerjs, Google Maps API
 						</h5>
-						<p>Streamlines tab sharing, allowing users to group tabs into stacks, and Kik them to friends.</p>
+						<p>Location-based image and video sharing platform that visually plots how media spreads by allowing users to track the journey of their uploads.</p>
 					</td>
 				</tr>
+
+
 				<tr>
 					<td>
 						<img src='images/proj/noted1.png'></img>
@@ -140,10 +166,27 @@
 					<td>
 					<h2>Noted</h2>
 					<h5>
-						Languages: JavaScript, Jade, HTML5, Python, CSS3, PHP<br>
-						Tools: Node.js, MongoDB, Express, Monk, Kik API, BeautifulSoup, mySQL, Zepto, Monogo
+						Languages: JavaScript, HTML<br>
+						Tools: Nodejs, Versal API, Abcjs API
 					</h5>
-					<p>Streamlines tab sharing, allowing users to group tabs into stacks, and Kik them to friends.</p>
+					<p>Interprets text to create sheet music, and reads it in a live playback.</p>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+						<img src='images/proj/eye1.png'></img>
+						<img src='images/proj/eye2.png'></img>
+					</td>
+
+					<td>
+					<h2>Eye-dentify</h2>
+					<h5>
+						Languages: Java, Python<br>
+						Tools: Android APK, Google Glass, Camfind API, HP Idol On Demand API
+					</h5>
+					<p>Google Glass app incorporating optical character and image recognition.</p>
 					</td>
 
 				</tr>
