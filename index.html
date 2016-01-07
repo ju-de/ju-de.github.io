@@ -387,8 +387,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<br><br>
 			
 				<h1>Tikitunes</h1>
+
 				<p><a href="https://github.com/ju-de/bleachbear-game">See it on Github</a>
+				<h5>Made with Tammy Liu</h5>
 				<p>A memory dance game. Follow the AI's moves to get the high score.</p>
+				
 				<br>
 
 				<div>
@@ -408,6 +411,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<img src='images/proj/tkt/p6.gif'>
 				</div>
 
+
+			</div>
+
+			<div id="content" class="grid_12">
+				<br><br>
+			
+				<h1>Leaving Vhir</h1>
+
+				<p>Concept art book for Togi Tale.</p>
+				
+				<br>
+
+				<div class = "data-book" style="width: 1000px">
+					<div><img src='images/proj/ttb/1.jpg'></div>
+					<div><img src='images/proj/ttb/12.jpg'></div>
+					<div><img src='images/proj/ttb/2.jpg'></div>
+					<div><img src='images/proj/ttb/3.jpg'></div>
+					<div><img src='images/proj/ttb/4.jpg'></div>
+					<div><img src='images/proj/ttb/5.jpg'></div>
+					<div><img src='images/proj/ttb/6.jpg'></div>
+					<div><img src='images/proj/ttb/7.jpg'></div>
+					<div><img src='images/proj/ttb/8.jpg'></div>
+					<div><img src='images/proj/ttb/9.jpg'></div>
+					<div><img src='images/proj/ttb/10.jpg'></div>
+					<div><img src='images/proj/ttb/11.jpg'></div>
+				</div>
 
 			</div>
 
@@ -464,6 +493,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		  	autoplay: true
 		  });
 		});
+
+		$('.data-book').slick({
+			  dots: true,
+			  infinite: true,
+			  speed: 300,
+			  slidesToShow: 2,
+			  slidesToScroll: 2,
+			  responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			        infinite: true,
+			        dots: true
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+			});
 	</script>
 </body>
 </html>
