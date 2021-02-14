@@ -26,10 +26,10 @@ img, p, span, a, div {
   position: fixed;
   top: 50%;
   left: 50%;
-  height: 800px;
-  width: 800px;
-  margin-left: -400px;
+  max-height: 800px;
+  max-width: 800px;
   margin-top: -400px;
+  margin-left: -400px;
   background-color: #eee;
   border-radius: 20px;
 }
@@ -42,10 +42,29 @@ img, p, span, a, div {
 
 .in {
   display: flex;
-  height: 700px;
-  width: 700px;
+  max-height: 700px;
+  max-width: 700px;
   margin: 50px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .box {
+    margin: auto;
+    position: static;
+    height: 100%; 
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .in {
+    height: auto;
+    /*flex-direction: column-reverse;*/
+  }
+
+  .bar {
+    display: none;
+  }
 }
 
 .left {
@@ -61,8 +80,8 @@ img, p, span, a, div {
 
 .icon {
   margin: auto;
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  max-width: 200px;
 }
 
 .icon img {
@@ -78,7 +97,7 @@ img, p, span, a, div {
 .links {
   margin: auto;
   display: flex;
-  width: 120px;
+  max-width: 120px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
@@ -86,8 +105,8 @@ img, p, span, a, div {
 
 .links a {
   margin: 5px;
-  height: 50px;
-  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
   background-color: #fff;
   border-radius: 50%
 }
@@ -100,7 +119,7 @@ img, p, span, a, div {
 
 .grid {
   padding: 10px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -114,6 +133,7 @@ img, p, span, a, div {
   height: 100px;
   width: 100px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .item:hover img {
