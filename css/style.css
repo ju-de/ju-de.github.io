@@ -26,12 +26,12 @@ img, p, span, a, div {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-height: 800px;
-  max-width: 800px;
-  margin-top: -400px;
-  margin-left: -400px;
-  background-color: #eee;
-  border-radius: 20px;
+  min-width: 480px;
+  min-height: 560px;
+  margin-left: -240px;
+  margin-top: -280px;
+  background-image: url('../images/vendingmachine.png');
+  background-repeat: no-repeat;
 }
 
 .box img {
@@ -42,9 +42,8 @@ img, p, span, a, div {
 
 .in {
   display: flex;
-  max-height: 700px;
-  max-width: 700px;
-  margin: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -56,36 +55,22 @@ img, p, span, a, div {
     width: 100%;
     overflow-y: auto;
   }
-
-  .in {
-    height: auto;
-    /*flex-direction: column-reverse;*/
-  }
-
-  .bar {
-    display: none;
-  }
 }
 
 .left {
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
+  width: 240px;
 }
 
 .right {
-  margin-left: 50px;
-  width: 30%;
+  width: 80px;
+  margin-left: 80px;
 }
 
 .icon {
-  margin: auto;
   max-height: 200px;
   max-width: 200px;
-}
-
-.icon img {
-  border-radius: 20px;=
 }
 
 .icon img:hover {
@@ -97,86 +82,45 @@ img, p, span, a, div {
 .links {
   margin: auto;
   display: flex;
-  max-width: 120px;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
 }
 
 .links a {
   margin: 5px;
-  max-height: 50px;
-  max-width: 50px;
-  background-color: #fff;
-  border-radius: 50%
+  max-height: 80px;
+  max-width: 80px;
 }
 
 .links img:hover {
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
+  transition: all 0.2s ease;
 }
 
 .grid {
-  padding: 10px;
   max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #ddd;
-  border-radius: 20px;
 }
 
 .item {
-  margin: 20px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   z-index: 1;
   cursor: pointer;
 }
 
 .item:hover img {
-  -ms-transform: translate(0, -2px);
-  -webkit-transform: translate(0, -2px);
-  transform: translate(0, -2px);
-}
-
-.bar {
-  margin-top: -25px;
-  height: 50px;
-  width: 100%;
-  background-color: #fff;
-  z-index: 0;
-}
-
-.card {
-  margin: 20px;
-  height: 300px;
-  width: 100%;
-}
-
-.slot {
-  margin: 20px;
-  padding: 5px;
-  background-color: #999;
-  color: #fff;
-}
-
-.button {
-  margin: auto;
-  height: 10px;
-  width: 10px;
-  background-color: #000;
-  border-radius: 50%;
+  -ms-transform: translate(0, -6px);
+  -webkit-transform: translate(0, -6px);
+  transform: translate(0, -6px);
+  transition: all 0.2s ease;
 }
 
 .item:hover .button {
     background-color: #bbb;
-}
-
-.label {
-  margin: 10px;
-  background-color: #bbb;
-  color: #fff;
 }
