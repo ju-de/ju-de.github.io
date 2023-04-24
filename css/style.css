@@ -134,10 +134,14 @@ img, p, span, a, div {
 
 .out {
   margin-top: 55px;
-  color: #fff;
+  margin-left: 190px;
+}
+
+.out p {
+  width: 100px;
   text-align: center;
-  font-weight: bold;
-  letter-spacing: .2rem;
+  color: #fff;
+  letter-spacing: .15rem;
 }
 
 footer {
