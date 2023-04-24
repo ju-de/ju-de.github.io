@@ -114,16 +114,16 @@ img, p, span, a, div {
   cursor: pointer;
 }
 
-.item:hover img {
+.shop {
+   content: url('../images/items/shop1.png');
+}
+.shop:hover {
+   content: url('../images/items/shop2.png');
   -ms-transform: translate(0, -6px);
   -webkit-transform: translate(0, -6px);
   transform: translate(0, -6px);
   transition: all 0.2s ease;
-}
-
-.item:hover .button {
-    background-color: #bbb;
-}
+} 
 
 .out {
   margin-top: 55px;
