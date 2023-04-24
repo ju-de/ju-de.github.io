@@ -125,6 +125,13 @@ img, p, span, a, div {
   transition: all 0.2s ease;
 } 
 
+.soon {
+   content: url('../images/items/soon1.png');
+}
+.soon:hover {
+   content: url('../images/items/soon2.png');
+} 
+
 .out {
   margin-top: 55px;
   color: #fff;
