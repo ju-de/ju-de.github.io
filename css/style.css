@@ -125,6 +125,17 @@ img, p, span, a, div {
   transition: all 0.2s ease;
 } 
 
+.games {
+   content: url('../images/items/games.png');
+}
+.games:hover {
+   content: url('../images/items/games.png');
+  -ms-transform: translate(0, -6px);
+  -webkit-transform: translate(0, -6px);
+  transform: translate(0, -6px);
+  transition: all 0.2s ease;
+} 
+
 .soon {
    content: url('../images/items/soon1.png');
 }
